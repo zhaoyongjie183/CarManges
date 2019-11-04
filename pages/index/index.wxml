@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">
+      <text decode="{{true}}">车&nbsp;&nbsp;牌&nbsp;&nbsp;号          </text>
+    </view>
+    <view class="flex-item bc_red">{{car.licenseNumber}}</view>
+  </view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">车辆品牌</view>
+    <view class="flex-item bc_red">{{car.vehicleBran==null?"":car.vehicleBran}}</view>
+  </view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">车辆型号</view>
+    <view class="flex-item bc_red">{{car.vehicleModel==null?"":car.vehicleModel}}</view>
+  </view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">车辆类型</view>
+    <view class="flex-item bc_red">{{car.vehicleType}}</view>
+  </view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">车辆颜色</view>
+    <view class="flex-item bc_red">{{car.color==null?"":car.color}}</view>
+  </view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">生产日期</view>
+    <view class="flex-item bc_red">{{car.productionDate==null?"":car.productionDate}}</view>
+  </view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">购买日期</view>
+    <view class="flex-item bc_red">{{car.purchasingDate==null?"":car.purchasingDate}}</view>
+  </view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">
+      <text decode="{{true}}">驾&nbsp;&nbsp;驶&nbsp;&nbsp;员</text>
+    </view>
+    <view class="flex-item bc_red">{{car.employees==null?"":car.employees}}</view>
+  </view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">归属单位</view>
+    <view class="flex-item bc_red">{{car.departments==null?"":car.departments}}</view>
+  </view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">
+      <text decode="{{true}}">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注</text>
+    </view>
+    <view class="flex-item bc_red">{{car.notes==null?"":car.notes}}</view>
+  </view>
+  <view class="imgText" wx:if="isShow">
+    <text>外观图片</text>
+  </view>
+  <view class="imgClass">
+    <image wx:for="{{pic}}" wx:key="*this" class="images" bindtap="clickImg" mode="scaleToFill" src="{{item}}" data-src="{{item}}"></image>
+  </view>
+  <view class="btn">
+    <button bindtap="clickGps" type="default" style="width:150px;">车辆定位</button>
+    <button bindtap="clickPlayBack" type="default" style="width:150px;">轨迹回放</button>
+  </view>
+</view>

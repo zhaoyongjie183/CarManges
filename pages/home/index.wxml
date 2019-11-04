@@ -1,0 +1,13 @@
+<view style="margin-top:10px;">
+  <view class="title">车牌号查看</view>
+  <view class="btn">
+    <input class="btn-input" name="inputValue" placeholder="请输入车辆号牌" bindinput="bindKeyInput"></input>
+  </view>
+  <view class="btn-v">
+    <button type="default" bindtap="clickSelect" class="btn-btn">查询</button>
+  </view>
+  <view class="scan">扫描二维码查看</view>
+  <view class="scan-img">
+    <image bindtap="clickImg" style="width:100px;height:100px;left:35%; position: absolute;" src="../../image/scan.png"></image>
+  </view>
+</view>

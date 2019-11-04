@@ -1,0 +1,51 @@
+/**index.wxss**/
+
+page {
+  background-color: #d3d3d3;
+}
+
+.flex-wrp {
+  display: flex;
+  border-bottom: 1px solid #c4c4c4;
+  background-color: white;
+}
+
+.bc_green {
+  width: 30%;
+  height: 40px;
+  align-content: center;
+  line-height: 40px;
+  color: #b7b7b7;
+  padding-left: 10px;
+}
+
+.bc_red {
+  width: 70%;
+  height: 40px;
+  align-content: center;
+  line-height: 40px;
+}
+
+.imgText {
+  padding-left: 10px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.images {
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+.imgClass {
+  background-color: white;
+}
+
+.btn {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

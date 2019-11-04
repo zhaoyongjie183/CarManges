@@ -1,0 +1,45 @@
+/* pages/home/index.wxss */
+
+page {
+  background-color: #d3d3d3;
+}
+
+.title {
+  align-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.btn-input {
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.btn-v {
+  margin: 0 auto;
+  width: 200px;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.scan {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.scan-img {
+  margin-top: 10px;
+}
+
+.btn-btn {
+  border-radius: 10px;
+}

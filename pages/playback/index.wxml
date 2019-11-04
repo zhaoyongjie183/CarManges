@@ -1,0 +1,40 @@
+<view class="map_container">
+  <map 
+  class="map" 
+  id="map" 
+  longitude="{{longitude}}" 
+  latitude="{{latitude}}"
+  scale="16"
+  show-location="true" 
+  markers="{{markers}}"
+  polyline="{{polyline}}"
+  bindmarkertap="makertap" 
+  show-scale="true"></map>
+</view>
+<view class="dates">
+<picker class="statrdate" 
+mode="date" 
+value="{{startdate}}" 
+start="2015-09-01" 
+end="2099-01-01"
+bindchange="bindDateChange">
+ <view class="picker">
+       {{startdate}}
+    </view>
+  </picker>
+  <text class="text">至</text>
+  <picker class="enddate" 
+  mode="date" 
+  value="{{enddate}}" 
+  start="2015-09-01" 
+  end="2099-01-01" 
+  bindchange="bindEndDateChange">
+ <view class="picker">
+       {{enddate}}
+    </view>
+  </picker>
+</view>
+  <view class="btn">
+    <button bindtap="clickSelect" type="default" style="width:150px;">查询</button>
+    <button bindtap="clickPlay" type="default" style="width:150px;">播放</button>
+  </view>

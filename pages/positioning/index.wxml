@@ -1,0 +1,11 @@
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap"></map>
+</view>
+<view style="margin-top: 10px;margin-left: 10px;">
+  <text style="padding-right:10px;">车牌:{{licenseNumber}}</text>
+  <!-- <text style="padding-right:10px;">状态:静止20分钟</text> -->
+  <text>时速:{{speed}} KM/H</text>
+</view>
+<view style="margin-top: 10px;margin-left: 10px;">
+  定位时间:{{localtime}}
+</view>

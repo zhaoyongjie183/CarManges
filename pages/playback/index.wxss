@@ -1,0 +1,49 @@
+/* pages/playback/index.wxss */
+
+page {
+  background-color: #d3d3d3;
+}
+
+.map_container {
+  height: 450px;
+  width: 100%;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+.picker {
+  background-color: #fff;
+}
+
+.dates {
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+  display: flex;
+  margin: 10 auto;
+  margin-top: 10px;
+}
+
+.statrdate {
+  width: 45%;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.text {
+  padding-right: 10px;
+}
+
+.enddate {
+  width: 45%;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
